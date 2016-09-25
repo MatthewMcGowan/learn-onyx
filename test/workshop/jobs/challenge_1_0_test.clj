@@ -12,7 +12,7 @@
 ;; Onyx's information model is documented in the cheat sheet: 
 ;; http://www.onyxplatform.org/docs/cheat-sheet/latest/
 ;;
-;; This challenge is an already-working example to get your started.
+;; This challenge is an already-working example to get you started.
 ;; Try it with:
 ;;
 ;; `lein test workshop.jobs.challenge-1-0-test`
