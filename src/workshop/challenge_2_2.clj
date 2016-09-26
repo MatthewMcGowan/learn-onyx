@@ -24,6 +24,24 @@
 
       ;; <<< BEGIN FILL ME IN >>>
 
+      {:onyx/name :times
+       :onyx/fn :workshop.challenge-2-2/times
+       :onyx/type :function
+       :times/k 3
+       :onyx/params [:times/k]
+       :onyx/batch-size batch-size
+       :onyx/batch-timeout batch-timeout
+       :onyx/doc "Multiplies :n in the segment by 3"}
+
+      {:onyx/name :plus
+       :onyx/fn :workshop.challenge-2-2/plus
+       :onyx/type :function
+       :plus/k 50
+       :onyx/params [:plus/k]
+       :onyx/batch-size batch-size
+       :onyx/batch-timeout batch-timeout
+       :onyx/doc "Adds 50 to :n in the segment"}
+
       ;; <<< END FILL ME IN >>>
 
       {:onyx/name :write-segments
