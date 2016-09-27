@@ -41,7 +41,14 @@
 
 ;; <<< BEGIN FILL ME IN >>>
 
+(defn split-sentence-by-spaces [sentence]
+  (clojure.string/split sentence #" "))
 
+(defn to-word-key-segment [word]
+  {:word word})
+
+(defn split-sentence [segment]
+  (map to-word-key-segment (split-sentence-by-spaces (:sentence segment))))
 
 ;; <<< END FILL ME IN >>>
 
