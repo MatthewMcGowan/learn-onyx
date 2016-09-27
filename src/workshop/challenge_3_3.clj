@@ -26,9 +26,12 @@
       {:onyx/name :transform-name
        :onyx/fn :workshop.challenge-3-3/transform-name
        :onyx/type :function
+       :name/prefix "~"
+       :name/suffix "?"
+       :onyx/params [:name/prefix :name/suffix]
        :onyx/batch-size batch-size
        :onyx/batch-timeout batch-timeout
-       :onyx/doc "Prepends a ~ and appends a ? to the :name"}
+       :onyx/doc "Prepends a prefix and appends a suffix to the :name"}
 
       ;; <<< END FILL ME IN PART 1 >>>
 
@@ -45,8 +48,8 @@
 
 ;; <<< BEGIN FILL ME IN PART 2 >>>
 
-(defn transform-name [segment]
-  (update-in segment [:name] #(str "~" % "?")))
+(defn transform-name [prefix suffix segment]
+  (update-in segment [:name] #(str prefix % suffix)))
 
 ;; <<< END FILL ME IN  PART 2 >>>
 
